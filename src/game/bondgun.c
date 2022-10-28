@@ -610,7 +610,7 @@ void bgun0f0981e8(struct hand *hand, struct modelfiledata *modeldef)
 		}
 
 		if (hand->animload >= 0) {
-			animspeedmult = 4.0f;
+			animspeedmult = 1.0f;
 			animspeed = hand->unk0ce8->unk04 / 10000.0f;
 
 			if (hand->unk0d0e_07 && g_Vars.currentplayer->hands[HAND_LEFT].inuse) {
