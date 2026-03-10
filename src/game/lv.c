@@ -995,6 +995,7 @@ static Gfx *lvPrintRateText(Gfx *gdl)
 
 static Gfx *lvPrint(Gfx *gdl)
 {
+	/* TODO: Implement this ability as a toggle
 	if (joyGetButtonsPressedThisFrame(0, L_TRIG)) {
 		g_LvShowStats = 1 - g_LvShowStats;
 	}
@@ -1004,7 +1005,7 @@ static Gfx *lvPrint(Gfx *gdl)
 		g_LvStatsPage = (g_LvStatsPage + 1) % 3;
 	}
 #endif
-
+	*/
 	lvRecordRate();
 
 	if (g_LvShowStats && g_LvStatsPage == 0) {

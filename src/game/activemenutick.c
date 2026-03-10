@@ -73,7 +73,7 @@ void amTick(void)
 				}
 
 				if (controlmode == CONTROLMODE_13 || controlmode == CONTROLMODE_14) {
-					if ((buttonsstate & R_TRIG) || (buttonsstate & 0)) {
+					if ((buttonsstate & R_TRIG) || (buttonsstate & L_TRIG)) {
 						stayopen = true;
 					}
 
@@ -85,7 +85,7 @@ void amTick(void)
 						stayopen = true;
 					}
 
-					if ((buttonsstate & R_TRIG) || (buttonsstate & 0)) {
+					if ((buttonsstate & R_TRIG) || (buttonsstate & L_TRIG)) {
 						g_AmMenus[g_AmIndex].allbots = true;
 					}
 				}
@@ -123,19 +123,19 @@ void amTick(void)
 					column = 2;
 				}
 
-				if (buttonsstate & 0) {
+				if (buttonsstate & U_JPAD) {
 					row = 0;
 				}
 
-				if (buttonsstate & 0) {
+				if (buttonsstate & D_JPAD) {
 					row = 2;
 				}
 
-				if (buttonsstate & 0) {
+				if (buttonsstate & L_JPAD) {
 					column = 0;
 				}
 
-				if (buttonsstate & 0) {
+				if (buttonsstate & R_JPAD) {
 					column = 2;
 				}
 

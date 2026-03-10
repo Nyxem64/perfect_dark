@@ -4222,7 +4222,7 @@ void menuProcessInput(void)
 				inputs.shoulder = 1;
 			}
 
-			if (buttons & 0) {
+			if (buttons & L_TRIG) {
 				inputs.shoulder = 1;
 			}
 
@@ -4266,35 +4266,35 @@ void menuProcessInput(void)
 				xtapdir = 1;
 			}
 
-			if (buttons & 0) {
+			if (buttons & U_JPAD) {
 				yhelddir = -1;
 			}
 
-			if (buttonsnow & 0) {
+			if (buttonsnow & U_JPAD) {
 				ytapdir = -1;
 			}
 
-			if (buttons & 0) {
+			if (buttons & D_JPAD) {
 				yhelddir = 1;
 			}
 
-			if (buttonsnow & 0) {
+			if (buttonsnow & D_JPAD) {
 				ytapdir = 1;
 			}
 
-			if (buttons & 0) {
+			if (buttons & L_JPAD) {
 				xhelddir = -1;
 			}
 
-			if (buttonsnow & 0) {
+			if (buttonsnow & L_JPAD) {
 				xtapdir = -1;
 			}
 
-			if (buttons & 0) {
+			if (buttons & R_JPAD) {
 				xhelddir = 1;
 			}
 
-			if (buttonsnow & 0) {
+			if (buttonsnow & R_JPAD) {
 				xtapdir = 1;
 			}
 		}

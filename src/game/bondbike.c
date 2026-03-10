@@ -195,8 +195,8 @@ void bbikeApplyMoveData(struct movedata *data)
 	if ((g_PlayerConfigsArray[g_Vars.currentplayerstats->mpindex].controlmode >= CONTROLMODE_11
 				&& g_PlayerConfigsArray[g_Vars.currentplayerstats->mpindex].controlmode <= CONTROLMODE_14)
 			&& !g_LvIsPaused) {
-		data->digitalstepleft = joyCountButtonsOnSpecificSamples(0, contnum, 0 | L_CBUTTONS);
-		data->digitalstepright = joyCountButtonsOnSpecificSamples(0, contnum, 0 | R_CBUTTONS);
+		data->digitalstepleft = joyCountButtonsOnSpecificSamples(0, contnum, L_JPAD | L_CBUTTONS);
+		data->digitalstepright = joyCountButtonsOnSpecificSamples(0, contnum, R_JPAD | R_CBUTTONS);
 	}
 
 	// Forward/back
