@@ -4,7 +4,7 @@ A mod that optimises for runtime performance on console.
 
 No accurate benchmarking has been done.
 
-The mod is based off the framerate graph mod, so you can press L to toggle the frame rate graph.
+The mod is based off the framerate graph mod, but the ability to activate the framegraph has been removed.
 
 ## GCC build
 
